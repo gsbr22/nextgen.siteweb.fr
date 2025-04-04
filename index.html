@@ -19,7 +19,7 @@
                     <li><a href="about.html">À propos</a></li>
                     <li><a href="#ebooks">Ebooks</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="https://gsbr22.github.io/loginnextgen/" class="btn">Connexion</a></li>
+                    <li><a href="auth/login.html" class="btn">Connexion</a></li>
                 </ul>
             </nav>
         </div>
@@ -101,5 +101,24 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+    // Vérifier la connexion au chargement
+    document.addEventListener('DOMContentLoaded', () => {
+        const user = JSON.parse(sessionStorage.getItem('user'));
+        if (user) {
+            // Afficher un bouton profil ou autres éléments
+            console.log('Utilisateur connecté:', user.email);
+        } else {
+            // Rediriger vers la page de login si non connecté
+            window.location.href = 'auth/login.html';
+        }
+    });
+
+    // Fonction de déconnexion
+    function logout() {
+        sessionStorage.removeItem('user');
+        window.location.href = 'auth/login.html';
+    }
+</script>
 </body>
 </html>
