@@ -17,7 +17,7 @@ document.querySelectorAll('.btn[href="#ebooks"]').forEach(btn => {
         // Pour cet exemple, nous redirigeons toujours vers la page de connexion
         if (!this.classList.contains('disabled')) {
             e.preventDefault();
-            window.location.href = "https://gsbr22.github.io/loginnextgen/";
+            window.location.href = "auth/login.html";
         }
     });
 });
@@ -43,7 +43,7 @@ if (window.location.pathname.includes('ebook-football')) {
             if (!isLoggedIn) {
                 e.preventDefault();
                 alert('Veuillez vous connecter pour procéder à l\'achat.');
-                window.location.href = "https://gsbr22.github.io/loginnextgen/";
+                window.location.href = "auth/login.html";
             }
         });
     }
