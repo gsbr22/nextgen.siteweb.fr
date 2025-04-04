@@ -1,3 +1,1 @@
-User-agent: *
-Allow: /
-Sitemap: https://gsbr22.github.io/nextgen.siteweb.fr/sitemap.xml
+
