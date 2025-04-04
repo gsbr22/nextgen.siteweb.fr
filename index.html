@@ -1,62 +1,74 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NextGenCorp - Des ebooks premium pour les passionnés de football">
     <title>NextGenCorp - Accueil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="guide_footballeur.png" as="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header role="banner">
+    <!-- Header avec lien vers auth -->
+    <header>
         <div class="container">
-            <nav aria-label="Navigation principale">
-                <a href="index.html" class="logo" aria-label="Accueil - NextGenCorp">
-                    <img src="nextlogo.png" alt="Logo NextGenCorp" width="150" height="50">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/nextlogo.png" alt="NextGenCorp Logo">
                 </a>
-                <button class="mobile-menu-btn" aria-expanded="false" aria-controls="main-nav">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul id="main-nav">
-                    <li><a href="about.html" class="nav-link">À propos</a></li>
-                    <li><a href="ebook-football.html" class="nav-link">Notre Ebook</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li><a href="https://gsbr22.github.io/loginnextgen/" class="btn btn-primary">Connexion</a></li>
+                <ul class="nav-links">
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="ebooks.html">Ebooks</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="auth/login.html" class="btn">Connexion</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <main>
-        <section class="hero" aria-labelledby="main-heading">
-            <div class="container">
-                <img src="nextlogo2.png" alt="" class="hero-logo" width="200" height="80" aria-hidden="true">
-                <h1 id="main-heading">Le Guide du Footballeur</h1>
-                <p class="hero-subtitle">L'ebook ultime pour améliorer vos performances footballistiques</p>
-                <a href="ebook-football.html" class="btn btn-large">Découvrir l'ebook</a>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="features" aria-labelledby="features-heading">
-            <div class="container">
-                <h2 id="features-heading" class="section-title">Pourquoi choisir notre ebook ?</h2>
-                <div class="features-grid">
-                    <!-- Feature cards... -->
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Section Hero -->
+    <section class="hero">
+        <div class="container">
+            <img src="images/nextlogo2.png" alt="NextGenCorp Logo" class="hero-logo">
+            <h1>Le Guide du Footballeur</h1>
+            <p>L'ebook ultime pour les passionnés de football</p>
+            <a href="ebooks.html" class="btn">Découvrir nos ebooks</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer role="contentinfo">
-        <!-- Pied de page standardisé -->
+    <footer>
+               <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>NextGenCorp</h3>
+                    <img src="nextlogo.png" alt="Logo" class="footer-logo">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/le_guide_du_footballeur/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@nextgencorp"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="#ebooks">Ebooks</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="legal.html">Mentions légales</a></li>
+                        <li><a href="legal.html#cgv">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NextGenCorp. Tous droits réservés.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
